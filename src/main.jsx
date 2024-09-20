@@ -16,6 +16,7 @@ import Authors,{loader as authorloader} from './routes/authors';
 import Landin from './routes/Landin';
 import Login from './routes/login';
 import Signup from './routes/signup';
+import About  from './routes/about';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,9 @@ const router = createBrowserRouter([
       {
         path:"/signup",
         element:<Signup />
+      },{
+        path:"/about",
+        element:<About />
       }
 
     ]
