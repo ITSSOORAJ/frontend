@@ -55,13 +55,15 @@ function Header(props) {
       <nav>
         <ul className="flex flex-row gap-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           <li>
-            <a href="#">About</a>
+            <Link to='about'>
+                 About
+                 </Link>
           </li>
           <li>
             <a href="#">NewsLetter</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
           <li>
             {loggedin ? (
